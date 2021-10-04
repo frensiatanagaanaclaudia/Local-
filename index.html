@@ -21,6 +21,11 @@
             <label for="email">Email:</label>
             <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
           </div>
+
+          <div class="form-group">
+            <label for="sm">Social Media:</label>
+            <input type="text" class="form-control" id="sm" placeholder="Enter Social Media" name="sm">
+          </div>
           
           <div class="form-group">
             <label for="Gender">Gender:</label>
@@ -39,14 +44,16 @@
       <script>
 function tolocal()
 {
-let name,email,psw;
+let name,email,gender,psw;
 name=document.getElementById("name").value;
 email=document.getElementById("email").value;
+sm=document.getElementById("sm").value;
 gender=document.getElementById("Gender").value;
 psw=document.getElementById("psw").value;
 
 localStorage.setItem("name",name)
 localStorage.setItem("email",email)
+localStorage.setItem("sm",sm)
 localStorage.setItem("psw",psw)
 localStorage.setItem("gender",gender)
 
